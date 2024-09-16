@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Create Todo</title>
+</head>
+
+<body>
+    <a href="index.php"><i class="fas fa-home">Home</i></a>
+
+    <div class="container">
+        <h1><i class="fas fa-tasks"></i> Create a New Task</h1>
+        <form id="add-task-form" method="POST" action="tasks.php" onsubmit="return validateForm();">
+            <input type="text" name="title" id="title" placeholder="Task title" required>
+            <input type="text" name="description" id="description" placeholder="Task description" required>
+            <input type="date" name="date" id="date" required>
+            <button type="submit">
+                <i class="fas fa-plus-circle"></i><b><i>Create Task</i></b>
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
